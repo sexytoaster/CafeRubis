@@ -59,6 +59,11 @@ void displayProducts(){
   
   line(width/2, height/10, width/2, height - (height/10));
   rect((width/2) + 10, start, billWidth, billHeight);
+  textSize(25);
+  fill(0);
+  text("Your Bill", (width/5) * 3, start + boxHeight/2);
+  fill(255);
+  
   
   for(i = 0; i < products.size()  ; i++)
   {
@@ -86,15 +91,14 @@ void displayProducts(){
      textSize(16);
      text(sDec, (borderLeft + boxWidth) - 20, start + boxHeight/2);
      start = start + boxHeight + 10;
-  }
- 
-    
-  
-  
+  }  
   
 }
 
-
+void mousePressed(){
+  
+  
+}
 
 
 
